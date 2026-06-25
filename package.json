@@ -1,0 +1,23 @@
+{
+  "name": "evernote-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Evernote — create/manage notes, notebooks, and tags",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "evernote-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "evernote": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}
